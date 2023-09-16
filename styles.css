@@ -1,0 +1,196 @@
+/* Fonts */
+@font-face {
+    font-family: "Lulo Clean W01 One Bold";
+    src: url(fonts/FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Brandon Grotesque Thin";
+    src: url(fonts/M-2p-thin/mplus-2p-thin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Brandon Grotesque Light";
+    src: url("fonts/Coves-Light/Coves Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neutra Bold";
+    src: url("fonts/neutra-text-font/NeutraText-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url("fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+
+/* General Settings */
+* {
+    font-family: "Brandon Grotesque Thin", "Avenir", "Arial";
+}
+
+/* Avoid images overfitting divs */
+img {
+    max-width: 100%;
+}
+
+/* Nav component */
+nav {
+    border-bottom: 3px solid;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0)
+}
+
+nav a:hover {
+    color: rgb(93, 93, 145);
+}
+
+nav .active {
+    color: #adb5bd;
+}
+
+/* Headers */
+main h1 {
+    font-family: "Lulo Clean W01 One Bold", "Avenir";
+    font-size: 20px;
+}
+
+main h2 {
+    font-size: 18px;
+}
+
+main h3 {
+    font-family: "Lulo Clean W01 One Bold", "Avenir";
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: 45px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid;
+    border-color: grey;
+}
+
+.picto-social-network {
+    width: 20px;
+}
+
+#copyright {
+    padding: 20px 0px;
+    background-color: rgb(247, 247, 247);
+}
+
+/* Highlighted text */
+.brand-bold {
+    font-family: "Lulo Clean W01 One Bold", "Avenir";
+    font-size: 12px;
+    font-style: italic;
+}
+
+.dancing-brand {
+    font-family: "Dancing Script", "Avenir";
+}
+
+.bold-text {
+    font-family: "Avenir";
+    font-size: 17px;
+}
+
+
+/* CSS rules for index.html file */
+.logo-carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+#discover-menu a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0)
+}
+    
+#discover-menu a:hover {
+    color: rgb(93, 93, 145);
+}
+
+.more-infos a {
+    font-family: "Avenir";
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#photo-gallery img {
+    padding: 5px;
+    width: 280px;
+    height: 200px;
+}
+
+#photo-gallery .img-tall {
+    height: 400px;
+}
+
+
+/* CSS rules for menu.html file */
+.logo {
+    width: 200px;
+}
+
+.logo-uber-eats, .logo-deliveroo {
+    width: 250px;
+    margin: 0px 30px 30px 30px;
+}
+
+.partners-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.and-between-logos {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#menu h5 {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+#menu ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#menu ul li {
+    margin-bottom: 10px;
+}
+
+/* CSS rules for infos.html file */
+.value-name {
+    font-family: "Lulo Clean W01 One Bold", "Avenir";
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
+
+.citation {
+    /* font-style: italic; */
+    font-family: "Avenir";
+    font-size: 17px;
+}
