@@ -147,18 +147,13 @@ footer {
     width: 200px;
 }
 
-.logo-uber-eats, .logo-deliveroo {
-    width: 250px;
-    margin: 0px 30px 30px 30px;
-}
-
 .partners-logo {
     display: flex;
     justify-content: center;
 }
 
 .and-between-logos {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 30px;
 }
 

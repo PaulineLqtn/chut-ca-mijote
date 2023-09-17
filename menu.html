@@ -13,7 +13,7 @@
   <body>
 
     <!-- Nav -->
-    <nav class="nav justify-content-around sticky-top bg-white pt-3 pb-2 ml-5 mr-5">
+    <nav class="nav justify-content-around sticky-top bg-white pt-3 pb-2 ml-1 mr-1 ml-md-5 mr-md-5">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="menu.html" class="nav-link active">La carte</a>
         <a href="infos.html" class="nav-link">Chut, c'est quoi?</a>
@@ -28,11 +28,17 @@
                 <p class="text-center pt-5"><img src="media/logo.webp" class="logo"/></p>
                 <h3 class="text-center mb-5 pb-5">DE L'AMOUR, DE LA BOUFFE, ET RIEN D'AUTRE...</h3>
                 <h2 class="text-center mt-3">COMMANDER EN LIGNE SUR</h2>
-                <div class="partners-logo">
-                    <a href="https://www.ubereats.com/fr/marseille/food-delivery/chut-ca-mijote/PaYK8ZQsSM26F1fj88n5vA"><img src="media/uber_eats_logo2.png" class="logo-uber-eats" alt="Logo Uber Eats"/></a>
-                    <div class="and-between-logos">&</div>
-                    <a href="https://deliveroo.fr/fr/menu/marseille/marseille-mazargues/chut-ca-mijote"><img src="media/deliveroo_logo.png" class="logo-deliveroo" alt="Logo Deliveroo"/></a>
-                </div> 
+                <div class="row justify-content-center mt-3">
+                    <div class="col-4">
+                        <a href="https://www.ubereats.com/fr/marseille/food-delivery/chut-ca-mijote/PaYK8ZQsSM26F1fj88n5vA"><img src="media/uber_eats_logo2.png" alt="Logo Uber Eats"/></a>
+                    </div>
+                    <div class="col-1 my-auto">
+                        <p class="text-center and-between-logos">&</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://deliveroo.fr/fr/menu/marseille/marseille-mazargues/chut-ca-mijote"><img src="media/deliveroo_logo.png" alt="Logo Deliveroo"/></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -44,7 +50,7 @@
                     <div id="entrees" class="col">
                         <h5 class="mb-4 font-weight-bold">Nos entrées / Pour l'apéro</h5>
                         <ul class="mt-4">
-                            <li><span class="bold-text">Trio de tapenades</span> - Olives vertes, olives noires, tomates séchées</li>
+                            <li><span class="bold-text">Trio de tapenades</span><span class="d-none d-md-inline"> - Olives vertes, olives noires, tomates séchées</span></li>
                             <li><span class="bold-text">Assiette de charcuterie</span></li>
                             <li><span class="bold-text">Assiette de fromage</span></li>
                             <li><span class="bold-text">Soupe au pistou</span></li>
@@ -56,10 +62,10 @@
                     <div id="salades" class="col">
                         <h5 class="mb-4 font-weight-bold">Nos salades</h5>
                         <ul class="mt-4">
-                            <li><span class="bold-text">L'Italienne</span> - Salade fraîche, tomates, mozzarella, légumes grillés (aubergines et courgettes), jambon cru Serrano, olives noires, parmesan et sauce pesto maison</li>
-                            <li><span class="bold-text">Salade César</span> - Salade fraîche, blanc de poulet et lardons cuisinés, œuf mollet, tomates cerises, olives noires, parmesan et sauce César</li>
-                            <li><span class="bold-text">Salade Grecque</span> - Salade fraîche, concombre, pois chiches, fêta,  œuf mollet, tomates cerises, oignons rouges et olives noires, filet d'huile d'olive</li>
-                            <li><span class="bold-text">Tartare de Saumon</span> - Saumon dans sa marinade (citron, vin blanc, poivrons, et oignons nouveaux) accompagné de sa salade</li>
+                            <li><span class="bold-text">L'Italienne</span><span class="d-none d-md-inline"> - Salade fraîche, tomates, mozzarella, légumes grillés (aubergines et courgettes), jambon cru Serrano, olives noires, parmesan et sauce pesto maison</span></li>
+                            <li><span class="bold-text">Salade César</span><span class="d-none d-md-inline"> - Salade fraîche, blanc de poulet et lardons cuisinés, œuf mollet, tomates cerises, olives noires, parmesan et sauce César</span></li>
+                            <li><span class="bold-text">Salade Grecque</span><span class="d-none d-md-inline"> - Salade fraîche, concombre, pois chiches, fêta,  œuf mollet, tomates cerises, oignons rouges et olives noires, filet d'huile d'olive</span></li>
+                            <li><span class="bold-text">Tartare de Saumon</span><span class="d-none d-md-inline"> - Saumon dans sa marinade (citron, vin blanc, poivrons, et oignons nouveaux) accompagné de sa salade</span></li>
                         </ul>
                     </div>
                 </div>
@@ -70,11 +76,11 @@
                     <div id="plats" class="col">
                         <h5 class="mb-4 font-weight-bold">Nos plats</h5>
                         <ul class="mt-4">
-                            <li><span class="bold-text">Filet de daurade royale</span> -  Tomates confites, fèves, et riz noir de Camargue, sauce crème ciboulette</li>
-                            <li><span class="bold-text">Moussaka</span> - Aubergines, viande de bœuf hachée, oignons, sauce tomate maison, parmesan et fromage râpé</li>
-                            <li><span class="bold-text">Lasagne au bœuf</span> - Pâtes fraîches maison, viande de bœuf, béchamel, tomates concassées, oignons et fromage râpé</li>
-                            <li><span class="bold-text">Boulettes de viandes et ses tagliatelles</span> - Boulettes de viandes (bœuf et chaire à saucisse) fourrées au fromage, tagliatelles fraîches et sa sauce tomate maison </li>
-                            <li><span class="bold-text">Risotto poulet et chorizo</span> - Riz, poulet, chorizo, huile d'olive, tomates séchées, bouillon de poulet, oignons et vin blanc</li>
+                            <li><span class="bold-text">Filet de daurade royale</span><span class="d-none d-md-inline"> -  Tomates confites, fèves, et riz noir de Camargue, sauce crème ciboulette</span></li>
+                            <li><span class="bold-text">Moussaka</span><span class="d-none d-md-inline"> - Aubergines, viande de bœuf hachée, oignons, sauce tomate maison, parmesan et fromage râpé</span></li>
+                            <li><span class="bold-text">Lasagne au bœuf</span><span class="d-none d-md-inline"> - Pâtes fraîches maison, viande de bœuf, béchamel, tomates concassées, oignons et fromage râpé</span></li>
+                            <li><span class="bold-text">Boulettes de viandes et ses tagliatelles</span><span class="d-none d-md-inline"> - Boulettes de viandes (bœuf et chaire à saucisse) fourrées au fromage, tagliatelles fraîches et sa sauce tomate maison</span></li>
+                            <li><span class="bold-text">Risotto poulet et chorizo</span><span class="d-none d-md-inline"> - Riz, poulet, chorizo, huile d'olive, tomates séchées, bouillon de poulet, oignons et vin blanc</span></li>
                         </ul>
                     </div>
                 </div>
