@@ -183,13 +183,13 @@ h5 {
 /* CSS rules for infos.html file */
 .value-name {
     font-family: "Lulo Clean W01 One Bold", "Avenir";
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 6px;
+    padding: 10px;
     letter-spacing: 2px;
 }
 
