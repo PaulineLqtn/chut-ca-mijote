@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <!-- Bootstrap CSS for styling and layout-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Include SimpleLightbox library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css">    
+  
   </head>
 
   <body>
@@ -99,46 +102,68 @@
         <section id="photo-gallery" class="row pt-5">
             <div class="col-6 col-md-3">
                 <div class="row">
-                    <img src="media/photos/IMG_0115.jpeg"/>
+                    <a class="example-image-link" href="media/photos/IMG_0115.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0115.jpeg" alt="Description of the image">
+                    </a>
                 </div>
                 <div class="row">
-                    <img src="media/photos/IMG_0277.jpeg"/>
+                    <a class="example-image-link" href="media/photos/IMG_0277.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0277.jpeg" alt="Description of the image">
+                    </a>
                 </div>
                 <div class="row">
-                    <img src="media/photos/IMG_0267.jpeg"/>
+                    <a class="example-image-link" href="media/photos/IMG_0267.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0267.jpeg" alt="Description of the image">
+                    </a>
                 </div>
 
             </div>
             <div class="col-6 col-md-3">
                 <div class="row">
-                    <img src="media/photos/IMG_0048.jpeg"/>
+                    <a class="example-image-link" href="media/photos/IMG_0048.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0048.jpeg" alt="Description of the image">
+                    </a>
                 </div>
                 <div class="row">
-                    <img src="media/photos/IMG_0361.jpeg" class="img-tall"/>
-                </div>
-                
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="row">
-                    <img src="media/photos/IMG_0228.jpeg"/>
-                </div>
-                <div class="row">
-                    <img src="media/photos/IMG_0085.jpeg"/>
-                </div>
-                <div class="row">
-                    <img src="media/photos/IMG_0024.jpeg"/>
+                    <a class="example-image-link" href="media/photos/IMG_0361.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0361.jpeg" alt="Description of the image" class="img-tall">
+                    </a>
                 </div>
                 
             </div>
             <div class="col-6 col-md-3">
                 <div class="row">
-                    <img src="media/photos/IMG_0340.jpeg"/>
+                    <a class="example-image-link" href="media/photos/IMG_0228.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0228.jpeg" alt="Description of the image">
+                    </a>
                 </div>
                 <div class="row">
-                    <img src="media/photos/IMG_0187.jpeg"/>
+                    <a class="example-image-link" href="media/photos/IMG_0085.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0085.jpeg" alt="Description of the image">
+                    </a>
                 </div>
                 <div class="row">
-                    <img src="media/photos/IMG_0286.jpeg"/>
+                    <a class="example-image-link" href="media/photos/IMG_0024.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0024.jpeg" alt="Description of the image">
+                    </a>
+                </div>
+                
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="row">
+                    <a class="example-image-link" href="media/photos/IMG_0340.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0340.jpeg" alt="Description of the image">
+                    </a>
+                </div>
+                <div class="row">
+                    <a class="example-image-link" href="media/photos/IMG_0187.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0187.jpeg" alt="Description of the image">
+                    </a>
+                </div>
+                <div class="row">
+                    <a class="example-image-link" href="media/photos/IMG_0286.jpeg" data-lightbox="gallery">
+                        <img src="media/photos/IMG_0286.jpeg" alt="Description of the image">
+                    </a>
                 </div>
             </div>
         </section>
@@ -168,6 +193,25 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Include SimpleLightbox library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize SimpleLightbox
+            var gallery = new SimpleLightbox('.example-image-link, #photo-gallery a', {
+                /* options can be added here */
+                captionType: 'attr',
+                captionsData: 'title',
+                disableScroll: true,
+                overlay: true,
+                closeOnOverlayClick: true,
+                closeOnEscapeKey: true,
+                docClose: true,
+                showCounter: true,
+                enableZoom: true,
+            });
+        });
+    </script>
 
   </body>
 
