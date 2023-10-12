@@ -39,7 +39,7 @@ nav {
     border-bottom: 3px solid;
 }
 
-nav a {
+nav a, #navbarToggleExternalContent a {
     text-transform: uppercase;
     color: rgb(0, 0, 0);
     font-size: 18px;
@@ -53,10 +53,21 @@ nav .active {
     color: #adb5bd;
 }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-    #menu .first-col {
-        border-right: solid;
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+/* Small Devices */
+@media all and (min-width:0px) and (max-width: 414px) {
+    #nav-desktop {
+        display: none;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width : 415px) {
+    .pos-f-t {
+        display: none;
     }
 }
 
@@ -192,6 +203,13 @@ h5 {
 
 #menu ul li {
     margin-bottom: 10px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #menu .first-col {
+        border-right: solid;
+    }
 }
 
 /* CSS rules for infos.html file */
