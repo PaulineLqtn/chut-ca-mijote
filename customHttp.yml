@@ -1,5 +1,5 @@
 customHeaders:
-  - pattern: 'https://chutcamijote-media.s3.eu-west-3.amazonaws.com/photos/*'
+  - pattern: 'https://chutcamijote-media.s3.eu-west-3.amazonaws.com/*'
     headers:
       - key: 'Cache-Control'
-        value: 'max-age=3600'
+        value: 'public, max-age=86400'
