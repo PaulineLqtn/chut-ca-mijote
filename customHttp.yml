@@ -1,0 +1,5 @@
+customHeaders:
+  - pattern: 'https://chutcamijote-media.s3.eu-west-3.amazonaws.com/*'
+    headers:
+      - key: 'Cache-Control'
+        value: 's-maxage=3600'
