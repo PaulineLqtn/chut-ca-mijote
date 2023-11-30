@@ -135,6 +135,11 @@ footer {
     z-index: 100;
 }
 
+.logo-square {
+    width: 184px;
+    height: 186px;
+}
+
 /* Change carousel arrows */
 #photoAlbum .carousel-control-prev-icon {
     width: 50px;
@@ -146,6 +151,11 @@ footer {
     width: 50px;
     height: 50px;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(247,247,247)' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.photo-carousel {
+    width: 800px;
+    height: 507px;
 }
 
 .index-side-photo {
@@ -185,6 +195,7 @@ footer {
 /* CSS rules for menu.html file */
 .logo {
     width: 200px;
+    height: 141px;
 }
 
 .partners-logo {
